@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AppRpgEtec.Models
 {
-    internal class Usuario
+    public class Usuario
     {
         public int Id { get; set; } 
         public string Username { get; set; } = string.Empty;

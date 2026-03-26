@@ -6,7 +6,7 @@ using System.Text;
 
 namespace AppRpgEtec.Services
 {
-    internal class Request
+    public class Request
     {
         public async Task<int> PostReturnIntAsync<TResult>(string uri, TResult data, string token)
         {

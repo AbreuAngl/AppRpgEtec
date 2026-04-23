@@ -3,13 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppRpgEtec.Views.Usuarios.LoginView"
              Title="LoginView">
-    <HorizontalStackLayout
+    <VerticalStackLayout>
+        <Entry Placeholder="Digite seu nome de usuário" Text ="{Binding Login}"
+Margin="0,10,0,0" VerticalOptions="Fill" HorizontalOptions="Fill">
+        </Entry>
+        <Entry Placeholder="Digite a senha" Text="{Binding Senha}" IsPassword="True"
+Margin="0,10,0,0" VerticalOptions="Fill" HorizontalOptions="Fill">
+        </Entry>
+        <Button Text="Entrar" Command="{Binding AutenticarCommand}" HorizontalOptions="Fill"
+Margin="0,10,0,0"/>
+    
+   
+       <HorizontalStackLayout
 HorizontalOptions="Center" Spacing="20" Margin="30">
-        <Label Text="Não possui login?"></Label>
-        <Label Text="Cadastre-se" FontAttributes="Bold"></Label>
-        <HorizontalStackLayout.GestureRecognizers>
-            <TapGestureRecognizer Command="{Binding DirecionarCadastroCommand}">
-            </TapGestureRecognizer>
-        </HorizontalStackLayout.GestureRecognizers>
-    </HorizontalStackLayout>
+             <Label Text="Não possui login?"></Label>
+             <Label Text="Cadastre-se" FontAttributes="Bold"></Label>
+             <HorizontalStackLayout.GestureRecognizers>
+                 <TapGestureRecognizer Command="{Binding DirecionarCadastroCommand}">
+                  </TapGestureRecognizer>
+             </HorizontalStackLayout.GestureRecognizers>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
 </ContentPage>

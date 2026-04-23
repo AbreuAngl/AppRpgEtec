@@ -12,7 +12,7 @@ namespace AppRpgEtec.Models
         public int PontosVida { get; set; }
         public int Forca { get; set; }
         public int Defesa { get; set; }
-        public int Inteligencoa { get; set; }
+        public int Inteligencia { get; set; }
         public byte[] FotoPersonagem { get; set; }
         public int Disputas { get; set; }
         public int Vitorias { get; set; }
